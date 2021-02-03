@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyframes</title>
+    <style>
+      body {
+        background: #333;
+      }
+
+      .box {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        /* animation-name: animate1;
+        animation-duration: 2s;
+        animation-iteration-count: 1; */
+        /* will make the element stay at the animation endpoint */
+        /* animation-fill-mode: forwards; */
+        /* delays start of animation by 2s */
+        /* animation-delay: 2s; */
+        /* will reverse animation */
+        /* animation-direction: alternate-reverse; */
+        /* starts slow, then goes faster.  ease out starts fast, then goes slow.  ease-in-out starts slow goes fast goes slow */
+        /* animation-timing-function: ease-in; */
+        animation: animate1 5s forwards 1s ease-in-out;
+      }
+
+      @keyframes animate1 {
+        from {
+          top: 0;
+        }
+
+        to {
+          width: 600px;
+          background-color: red;
+          top: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
